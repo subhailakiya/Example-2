@@ -1,0 +1,26 @@
+/* in flex direction and wrap we need not to be write in separate comment just write in single command as flex-flow: column-reverse 
+wrap; that it wrap means take two box into next line 
+order used in html as <div style="order:2;">box 1</div> 
+<div>box2</div>  <div>box 3</div> output as box 2,box 3,box1 bcoz it takes as order last without mention the order it takes as 1st 
+then ordering ..........
+flex-shrink, order,flex-grow,flex-basis,self they all are used in html like <div style="flex-grow:2;">box 3</div>
+                     
+*/
+
+.flex {
+    background-color: yellow;
+   height:300px;
+    display: flex;
+    /*flex-flow: row-reverse wrap; */
+    justify-content: center;   /*  it is x axis in row default but align item is y axis in row direction */
+   align-items:stretch;
+    
+
+}
+.flex > div{
+    padding: 12px 18px;
+    margin:18px;
+    border:2px solid orange;
+    font-size: medium;
+   
+}
